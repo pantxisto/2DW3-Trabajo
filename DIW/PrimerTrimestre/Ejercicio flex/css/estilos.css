@@ -1,0 +1,120 @@
+/* Pongo flex a toda la página en columnas */
+body {
+    display:flex;
+    flex-direction: column;
+}
+ 
+/* Estilos generales para todos los divs principales */
+.funcion-flex, .navegacion, .pie-pagina {
+    background-image: linear-gradient(-90deg, white, red);
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+/* Hago que el fortmulario sea un flex en vertical para que aparezca debajo de la imagen */
+.inicio {
+    float:left;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Pongo el flex de recuadros aparte ya que no necesita bordes */
+.recuadros {
+    display:flex;
+}
+
+/*Doy a cada div su altura correspondiente */
+.funcion-flex {
+    height: 10%;
+    text-align: center;
+}
+
+.navegacion {
+    height: 10%;
+    text-align: center;
+}
+
+.recuadros{
+    height: 70%;
+    text-align:center;
+    font-size: 30px;
+}
+
+.pie-pagina {
+    height: 10%;
+    /* justify-content: center; */
+    text-align:center;
+}
+
+/* Doy al logo border-radius */
+img{
+    border-radius:60px;
+    overflow:hidden;
+    margin-left:100%;
+}
+
+/* Doy al formulario su estilo */
+#logoDesplegable>li>ul{
+    display:none;
+    list-style-type:none;
+    position: absolute;
+    z-index: 1000;
+    border-style: solid;
+    border-width: 6px;
+    border-color: orangered;
+    border-radius: 10px;
+    padding-left:0px;
+}
+
+#logoDesplegable {
+    list-style: none;
+}
+
+#logoDesplegable>li>ul>li{
+    background-color: orange;
+    padding-left:10px;
+    padding-right: 10px
+}
+
+
+#logoDesplegable>li>img:hover + ul, #logoDesplegable>li>ul:hover {
+    display: block;
+}
+
+label {
+    display:block;
+}
+
+/* Cuando hago hover sobre la imagen o sobre la propia lista se muestra la lista */
+img:hover + ul, .inicio > ul:hover {
+    display: block;
+} 
+
+
+/* Doy a cada recuadro su anchura */
+.recuadro1 {
+    width:50%;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    columns: 100px 3;
+    min-width: 300px;
+}
+
+.recuadro2 {
+    width:25%;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.recuadro3 {
+    width:25%;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+

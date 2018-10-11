@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Formulario de entrada del dato</title>
+    </head>
+    
+    <body>
+        <form action="accion.php" method="post">
+            Su nombre:<input type="text" name="nombre" />
+            Su edad:<input type="text" name="edad" />
+            <!-- <input type="submit" /> -->
+            <input type="radio" name="sexo" value="M" checked />Mujer
+            <input type="radio" name="sexo" value="H" />Hombre<br><br>
+            <input type="checkbox" name="extras[]" value="garage" checked />Garaje
+            <input type="checkbox" name="extras[]" value="piscina" />Piscina
+            <input type="checkbox" name="extras[]" value="jardin" />Jardin<br><br>
+            <input type="submit" name="act" value="Actualizar datos" />
+         </form>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<body id="cuerpo" class="item">
+    <div id="primero" class="item">
+        <div id="segundo" class="item">
+            <div id="tercero_A" class="item">
+                <button id="Boton_1" class="item">one</button>
+            </div>
+            <div id="tercero_B" class="item">
+                <button id="Boton_2" class="item">two</button>
+                <button id="Boton_3" class="item">three</button>
+            </div>
+        </div>
+    </div>
+    <div id="one_b" class="item">
+ 
+    </div>
+ 
+    <script>
+        var items = document.querySelectorAll(".item");
+ 
+        for (var i = 0; i < items.length; i++) {
+            var el = items[i];
+ 
+            //Fase de CAPTURA
+            el.addEventListener("click", Mostrar, true);
+ 
+            //Fase de BUBLING
+            el.addEventListener("click", Mostrar, false);
+        }
+ 
+        function Mostrar(e) {
+            console.log(e.currentTarget.id);
+        }
+    </script>
+<div id='turnkey-credit'> <div> <a href='http://www.turnkeylinux.org/moodle'>Moodle Appliance</a> - Powered by <a href='http://www.turnkeylinux.org'>TurnKey Linux</a> </div> </div></body>
+</html>

@@ -1,0 +1,161 @@
+body {
+    background-image: url(../img/atzekalde2.jpg);  
+}
+
+#fija>li{
+    list-style-type:none;
+    padding:5px;
+    float:left;
+}
+
+#fija>li>ul>li{
+    border-style: solid;
+    border-width: 2px;
+    border-color: orangered;
+    background-color: orange;
+    padding-left:10px;
+    padding-right: 10px
+}
+
+#logoDesplegable {
+    padding-left:0px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+#logoDesplegable *{
+    list-style-type:none;
+}
+
+#fija>li>ul{
+    display:none;
+    list-style-type:none;
+    position: absolute;
+    z-index: 1000;
+    border-style: solid;
+    border-width: 6px;
+    border-color: orangered;
+    border-radius: 10px;
+}
+
+#fija>li>a:hover + ul, #fija>li>ul:hover {
+    display: block;
+} 
+
+#logoDesplegable>li>ul{
+    display:none;
+    list-style-type:none;
+    position: absolute;
+    z-index: 1000;
+    border-style: solid;
+    border-width: 6px;
+    border-color: orangered;
+    border-radius: 10px;
+    padding-left:0px;
+}
+#logoDesplegable>li>ul>li{
+    background-color: orange;
+    padding-left:10px;
+    padding-right: 10px
+}
+
+#logoDesplegable>li>img:hover + ul, #logoDesplegable>li>ul:hover {
+    display: block;
+} 
+
+#logoDesplegable {
+    list-style: none;
+} 
+
+header {
+    display: block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: orangered;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, transparent , orange);
+    margin-top:30px;
+}
+
+#criaturas{
+    padding-left:0px;
+}
+#fija{
+    display:inline-block;
+    margin-left:10%;
+    margin-bottom:20px;
+}
+
+#logo{
+    display:inline-block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: orangered;
+    border-radius: 100px;
+    -webkit-box-shadow: 0 10px 10px rgba(226, 92, 30, 0.534);
+    -moz-box-shadow: 0 10px 10px rgba(226, 92, 30, 0.534);
+    box-shadow: 10px 10px 10px rgba(226, 92, 30, 0.534);
+    overflow:hidden;
+    margin-left:20%;
+    margin-top:20px;
+}
+
+#animada{
+    display:inline-block;
+    margin-bottom: 25px;
+}
+
+#animada li{
+    list-style-type:none;
+    float: right;
+}
+
+h3 {
+    color:green;
+    border-style:solid;
+    border-width: 0px 0px 1px 0px;
+    border-color:green; 
+}
+
+#cuerpo {
+    padding-left:10%;
+    padding-right:10%;
+}
+
+#seccion {
+    display:inline-block;
+    width: 50%;
+    margin-right:5%;
+    
+    
+}
+
+#lateral {
+    float: right;;
+    width: 45%;
+    
+}
+
+#pie {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    background-image: linear-gradient(to right, transparent , orange);
+}
+
+#alumno {
+    float:right;
+    color:green;
+    margin-right: 50%;
+    padding-top:25px;
+}
+
+#txurdinaga{
+    display:inline-block;
+    bottom: 0%;
+    margin-left:20px;
+}
+
+#animales{
+    float:left;
+    margin:10px;
+}

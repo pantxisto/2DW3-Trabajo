@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<body id="cuerpo">
+    <div  id="dado" style="width: 100px; height: 100px; border:1px solid black; text-align:center; line-height: 100px"></div>
+    <button id="boton">Pulsar</button>
+	
+ 
+    <script>
+        var dado=document.getElementById("dado");
+        var boton=document.getElementById("boton");
+
+        boton.addEventListener("click",tirarDado);
+
+        function tirarDado(e) {
+            var valor=Math.round(Math.random() * (7 - 1) + 1);
+            dado.innerHTML=valor;
+        }
+
+    </script>
+</html>

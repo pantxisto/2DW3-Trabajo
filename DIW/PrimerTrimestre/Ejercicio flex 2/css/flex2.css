@@ -1,0 +1,118 @@
+/* Rodeo cada seccion con un borde */
+.cabecera, .pie {
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+}
+
+/* Centro la imagen de la cabecera */
+.cabecera > img {  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* body {
+    flex:column;
+} */
+
+/*navegacion */
+.navegacion {
+    display: flex;
+    flex-wrap:wrap;
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hago que el navegador sea un flex para acomodar las cosas */
+.flexColumn {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right:  auto;
+    text-align: center;
+}
+
+/* Hago que los divs del navegador se expandan en su contenedor flex */
+.navegacion > div {
+    width:20%;
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    text-align:center;
+    font-size: 30px;
+}
+
+/* Pongo un border a los divs y los centro */
+
+
+/* Centro la imagen del cuepro1 */
+.cuerpo > .cuerpo1 > img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Centro el cuerpo1 y le pongo un borde */
+.cuerpo1 {
+    display: inline-block;
+    vertical-align: top; 
+    width:50%;
+    padding:10px;
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    text-align:center;
+    font-size: 30px;
+    flex: 1 1 500px;
+    margin-left: auto;
+    margin-right:  auto;
+}
+
+/* Hago que haya un flex column */
+.flexColumn {
+    width:50%;
+    vertical-align: top; 
+    display: inline-block;
+    padding:0px;
+    flex: 1 1 500px;
+    margin-left:  auto;
+	margin-right:  auto;
+}
+
+/* Pongo un border y alineo la letra de cuerpo2 y cuerpo3 */
+.cuerpo2 {
+    height: 50%;
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    text-align:center;
+    font-size: 30px;
+    padding:10px;
+    overflow-y:scroll;
+} 
+.cuerpo3 {
+    height: 43%;
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    text-align:center;
+    font-size: 30px;
+    padding:10px;
+    overflow-y:scroll;
+} 
+
+/* Centro el texto del pie */
+.pie {
+    text-align:center;
+    max-width: 100%;
+    margin-left: : auto;
+    margin-right:  auto;
+}

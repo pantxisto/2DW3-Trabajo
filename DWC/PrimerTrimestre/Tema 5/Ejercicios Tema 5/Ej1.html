@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<body id="cuerpo">
+    <div class="caja" id="caja1" style="width: 100px; height: 100px; background: red;"></div>
+    <div class="caja" id="caja2" style="width: 100px; height: 100px; background: yellow;"></div>
+    <div class="caja" id="caja3" style="width: 100px; height: 100px; background: yellowgreen;"></div>
+    <div class="caja" id="caja4" style="width: 100px; height: 100px; background: blue;"></div>
+    <div class="caja" id="caja5" style="width: 100px; height: 100px; background: blueviolet;"></div>
+	
+ 
+    <script>
+        var items = document.querySelectorAll(".caja");
+ 
+        for (var i = 0; i < items.length; i++) {
+            var el = items[i];
+ 
+            //onmouseover
+            el.addEventListener("mouseover", Colorear);
+            el.addEventListener("mouseout", Descolorear);
+        }
+ 
+        function Colorear(e) {
+            document.body.style.backgroundColor=document.getElementById(e.currentTarget.id).style.backgroundColor;
+        }
+
+        function Descolorear() { 
+            document.body.style.backgroundColor="white";
+        }
+
+    </script>
+</html>
