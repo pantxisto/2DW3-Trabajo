@@ -12,6 +12,7 @@ nav, footer, header{
     min-width:80%;
     border-radius: 5px;
     margin:5px auto;
+    font-size: 50px;
 }
 
 nav{
@@ -47,6 +48,7 @@ article{
     background-color: greenyellow;
     display:inline-block;
     border-radius: 5px;
+    font-size: 30px;
 }
 
 section{
@@ -57,6 +59,7 @@ section{
     background-color: blueviolet;
     vertical-align: top;
     border-radius: 5px;
+    font-size: 30px;
 }
 
 aside{
@@ -68,6 +71,7 @@ aside{
     line-height: 150px;
     display:inline-block;
     border-radius: 5px;
+    font-size: 20px;
 }
 
 
