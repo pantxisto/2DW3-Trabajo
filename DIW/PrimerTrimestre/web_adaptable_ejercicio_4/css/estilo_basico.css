@@ -1,0 +1,156 @@
+
+body {
+  padding: 2em; 
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.nav {
+  background: deepskyblue;
+}
+
+.main {
+  text-align: left;
+  background: grey;
+}
+
+.section {
+  background: gold;
+}
+
+.aside {
+  background: hotpink;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+/* Ordenador */
+@media screen and (min-width:701px){
+  .nav .ul{
+    list-style:none;   
+    display:flex;
+    justify-content:center;
+    
+  }
+
+  .nav .ul li{
+    /* display:inline-block; */
+    margin:5px;   
+  }
+
+  .nav .ul li a{
+    text-decoration:none;
+    color:white;
+  }
+
+  .main{
+    display:flex;
+  }
+
+  .row{
+    display:flex;
+  }
+
+  /* Estas dos partes me hacen dudar */
+  .aside{
+    width:70%;
+  }
+
+  .section{
+    width:30%;
+    margin-right:10px;
+  }
+  
+}
+
+/* Tablet */
+@media screen and (max-width:700px) and (min-width:501px){
+  .nav .ul{
+    list-style:none;   
+    display:flex;
+    justify-content:center;
+  }
+
+  .nav .ul li{
+    /* display:inline-block; */
+    margin:5px;   
+  }
+
+  .nav .ul li a{
+    text-decoration:none;
+    color:white;
+  }
+
+  .main{
+    display:flex;
+  }
+
+  .row{
+    display:flex;
+  }
+
+  /* Estas dos partes me hacen dudar */
+  .aside{
+    width:70%;
+  }
+
+  .section{
+    width:30%;
+    margin-right:10px;
+  }
+}
+
+/* Movil */
+@media screen and (max-width:500px){
+  .nav .ul{
+    list-style:none;   
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+
+  .nav .ul li{
+    /* display:inline-block; */
+    margin:5px;   
+  }
+
+  .nav .ul li a{
+    text-decoration:none;
+    color:white;
+  }
+
+  .main{
+    display:flex;
+  }
+
+  .row{
+    display:flex;
+  }
+
+  /* Estas dos partes me hacen dudar */
+  .aside{
+    width:70%;
+  }
+
+  .section{
+    width:30%;
+    margin-right:10px;
+  }
+}
+

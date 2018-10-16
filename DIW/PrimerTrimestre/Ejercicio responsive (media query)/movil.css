@@ -6,6 +6,7 @@
 body{
     height: 100%;
     width: 100%;
+    font-size:6px;
 }
 nav, footer, header{
     min-height: 50px;
@@ -47,6 +48,7 @@ article{
     background-color: greenyellow;
     display:inline-block;
     border-radius: 5px;
+    font-size:1.875rem;
 }
 
 section{
@@ -70,22 +72,14 @@ aside{
     border-radius: 5px;
 }
 
-
-
-
-
 header,nav,footer {
-    font-size:18.75px;
-}
-
-article {
-    font-size:11.25px;
+    font-size:3.125em;
 }
 
 section {
-    font-size:11.25px;
+    font-size:1.875rem;
 }
 
 aside {
-    font-size:7.5px;
+    font-size:1.25em;
 }
