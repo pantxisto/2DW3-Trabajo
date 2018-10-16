@@ -41,12 +41,16 @@
             imagen.src=f;  
         }
 
-        function reproducirFotos() {
-            console.log("Prueba");
-            for(var i=0;i<4;i++){
-                var foto=document.getElementById("foto"+i);
-                foto.style.display="inline-block";
-            }           
+        // function reproducirFotos() {
+        //     console.log("Prueba");
+        //     for(var i=0;i<4;i++){
+        //         var foto=document.getElementById("foto"+i);
+        //         foto.style.display="inline-block";
+        //     }           
+        // }
+
+        function reproducirFotos(){
+            setInterval(siguienteFoto,1000);
         }
 
     </script>
