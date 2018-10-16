@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<body id="cuerpo">
+
+
+    <div id="visor">
+        <img src='foto1.jpg' name='fotoVisor'/>
+
+    </div>
+
+    <button id="boton1">Siguiente</button>
+    <button id="boton2">Atrás</button>
+    
+    <script>
+        var imagen=document.images["fotoVisor"];
+        var botonSiguiente=document.getElementById("boton1");
+        var botonAtras=document.getElementById("boton2");
+        var contador=0;
+
+        botonSiguiente.addEventListener("click",siguienteFoto);
+        botonAtras.addEventListener("click",anteriorFoto);
+
+        function siguienteFoto() {
+            contador=contador+1;
+            if(contador==4)
+            contador=0;
+            f="foto"+contador+".jpg";
+            imagen.src=f;            
+        }
+
+        function anteriorFoto() {
+            contador=contador-1;
+            if(contador==-1)
+            contador=3;
+            f="foto"+contador+".jpg";
+            imagen.src=f;  
+        }
+
+    </script>
+</html>

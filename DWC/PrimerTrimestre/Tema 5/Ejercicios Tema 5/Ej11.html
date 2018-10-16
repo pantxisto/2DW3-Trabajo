@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<body id="cuerpo">
+    Límite:
+    <input type="text" id="limite"><br>
+    Texto:
+    <textarea rows="4" cols="50" id="textarea"></textarea><br>
+    Carácteres:
+    <input type="text" id="caracteres"><br>
+
+    <script>
+        var limite=document.getElementById("limite");
+        var textarea=document.getElementById("textarea");
+        var caracteres=document.getElementById("caracteres");
+
+        limite.addEventListener("keyup",cambiarTextarea);
+        textarea.addEventListener("keyup",cambiarCaracteres);       
+
+        function cambiarTextarea() {
+            var valor=limite.value;
+            console.log(valor);
+            textarea.setAttribute('maxlength',valor);
+        }
+
+        function cambiarCaracteres() {
+            var valor=textarea.value;
+            console.log(valor);
+            caracteres.value=valor.length;
+        }
+
+    </script>
+</html>

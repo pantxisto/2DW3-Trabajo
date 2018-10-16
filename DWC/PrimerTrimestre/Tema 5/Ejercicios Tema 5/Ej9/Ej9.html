@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<body id="cuerpo">
+
+
+    <div id="visor">
+        <img src='foto0.jpg' name='fotoVisor'  id="foto0"/>
+        <img src='foto1.jpg' id="foto1" style="display:none"/>
+        <img src='foto2.jpg' id="foto2" style="display:none"/>
+        <img src='foto3.jpg' id="foto3" style="display:none"/>
+    </div>
+
+    <button id="boton1">Siguiente</button>
+    <button id="boton2">Atrás</button>
+    <button id="boton3">Reproducir</button>
+    
+    <script>
+        var imagen=document.images["fotoVisor"];
+        var botonSiguiente=document.getElementById("boton1");
+        var botonAtras=document.getElementById("boton2");
+        var botonReproducir=document.getElementById("boton3");
+        var contador=0;
+
+        botonSiguiente.addEventListener("click",siguienteFoto);
+        botonAtras.addEventListener("click",anteriorFoto);
+        botonReproducir.addEventListener("click",reproducirFotos);
+
+        function siguienteFoto() {
+            contador=contador+1;
+            if(contador==4)
+            contador=0;
+            f="foto"+contador+".jpg";
+            imagen.src=f;            
+        }
+
+        function anteriorFoto() {
+            contador=contador-1;
+            if(contador==-1)
+            contador=3;
+            f="foto"+contador+".jpg";
+            imagen.src=f;  
+        }
+
+        function reproducirFotos() {
+            console.log("Prueba");
+            for(var i=0;i<4;i++){
+                var foto=document.getElementById("foto"+i);
+                foto.style.display="inline-block";
+            }           
+        }
+
+    </script>
+</html>
+

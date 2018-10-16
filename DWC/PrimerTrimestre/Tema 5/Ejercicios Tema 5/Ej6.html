@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<body id="cuerpo">
+    <div  id="parrafo">Frase para mover</div>
+    <button id="botonParar">Parar</button>
+    <button id="botonIniciar">Iniciar</button>
+
+	
+ 
+    <script>
+        
+        var parrafo=document.getElementById("parrafo");
+
+        var botonParar=document.getElementById("botonParar");
+        var botonIniciar=document.getElementById("botonIniciar");      
+
+        botonParar.addEventListener("click", pararScroll);
+        botonIniciar.addEventListener("click", empezar);       
+
+        function iniciarScroll() {
+            var valor=parrafo.innerHTML.slice(1);
+            parrafo.innerHTML=valor;
+            botonIniciar.disabled=true;
+        }
+
+        function pararScroll() {
+            clearInterval(iniciar);
+            botonIniciar.disabled=false;
+        }
+
+        function empezar(){
+            iniciar=setInterval(iniciarScroll, 1000);
+        }
+
+    </script>
+</html>
