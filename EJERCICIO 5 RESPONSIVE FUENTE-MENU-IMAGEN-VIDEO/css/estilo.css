@@ -1,0 +1,42 @@
+body {
+    margin:0px;
+}
+
+#cabecera {
+    background-color:orange;  
+}
+
+#menu {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#menu_ul {
+    list-style: none;   
+    padding-top:40px;
+    padding-bottom:40px;
+    margin-top:0px;  
+    display:flex;
+    flex-wrap:wrap;
+
+#menu_ul li {
+    margin-right:4%;
+    margin-left:4%;
+    padding:2%;
+    background-color:grey;
+    border:2px;
+    border-style: solid;
+    border-color:black;
+    border-radius:5px;
+    /* flex: 0.5 100%; */
+}
+
+#menu_ul li a {
+    text-decoration:none; 
+    color:white;
+}
+
+#logo {
+    float:left; 
+}
+
